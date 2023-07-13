@@ -2,7 +2,7 @@
 ## Makefile generated for component 'flightControlSystem'. 
 ## 
 ## Makefile     : flightControlSystem.mk
-## Generated on : Tue Jun 06 18:40:22 2023
+## Generated on : Wed Jun 14 22:23:04 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/flightControlSystem.so
 ## Product type : executable
 ## 
@@ -18,10 +18,10 @@
 
 PRODUCT_NAME              = flightControlSystem
 MAKEFILE                  = flightControlSystem.mk
-MATLAB_ROOT               = /usr/local/Polyspace/R2021a
-MATLAB_BIN                = /usr/local/Polyspace/R2021a/bin
-MATLAB_ARCH_BIN           = $(MATLAB_BIN)/glnxa64
-START_DIR                 = /home/laberobotica/Documentos/Control-of-flight-and-navigation-of-UAV-from-small-size/Mambo_Simulink_Model/work
+MATLAB_ROOT               = C:/PROGRA~1/POLYSP~1/R2021a
+MATLAB_BIN                = C:/PROGRA~1/POLYSP~1/R2021a/bin
+MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
+START_DIR                 = C:/Users/gabri/OneDrive/Desktop/Control-of-flight-and-navigation-of-UAV-from-small-size/Mambo_Simulink_Model/work
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -49,6 +49,11 @@ CPP_STANDARD_OPTS         =
 # PARROT_GCCCOMPILER_LIB_DIR
 # PARROT_GCCSourceryLite
 
+#-----------
+# MACROS
+#-----------
+
+SHELL                      = %SystemRoot%/system32/cmd.exe
 
 TOOLCHAIN_SRCS = 
 TOOLCHAIN_INCS = 
@@ -89,7 +94,7 @@ DOWNLOAD =
 EXECUTE = $(PRODUCT)
 
 # Builder: GMAKE Utility
-MAKE_PATH = %MATLAB%/bin/glnxa64
+MAKE_PATH = %MATLAB%\bin\win64
 MAKE = "$(MAKE_PATH)/gmake"
 
 
@@ -108,9 +113,9 @@ OUTPUT_FLAG         = -o
 ARDEBUG             =
 STATICLIB_OUTPUT_FLAG =
 MEX_DEBUG           = -g
-RM                  = @rm -f
+RM                  = @del /F
 ECHO                = @echo
-MV                  = @mv
+MV                  = @move
 RUN                 =
 
 #----------------------------------------
@@ -151,7 +156,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I/home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/include -I$(START_DIR)/flightControlSystem_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils
+INCLUDES_BUILDINFO = -I$(START_DIR) -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2021a/toolbox/target/SUPPOR~1/parrot/include -I$(START_DIR)/flightControlSystem_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -172,7 +177,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_image.c $(START_DIR)/flightControlSystem_ert_rtw/flightControlSystem.c $(START_DIR)/flightControlSystem_ert_rtw/flightControlSystem_data.c $(START_DIR)/flightControlSystem_ert_rtw/rtGetInf.c $(START_DIR)/flightControlSystem_ert_rtw/rtGetNaN.c $(START_DIR)/flightControlSystem_ert_rtw/rt_nonfinite.c /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_control.c /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_of.c /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_vis.c /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/ptimer.c /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/controlCommand.c /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/mw_extrathreads.c
+SRCS = C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_image.c $(START_DIR)/flightControlSystem_ert_rtw/flightControlSystem.c $(START_DIR)/flightControlSystem_ert_rtw/flightControlSystem_data.c $(START_DIR)/flightControlSystem_ert_rtw/rtGetInf.c $(START_DIR)/flightControlSystem_ert_rtw/rtGetNaN.c $(START_DIR)/flightControlSystem_ert_rtw/rt_nonfinite.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_control.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_of.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_vis.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/ptimer.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/controlCommand.c C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/mw_extrathreads.c
 
 ALL_SRCS = $(SRCS)
 
@@ -374,7 +379,7 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-rsedu_image.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_image.c
+rsedu_image.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_image.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
@@ -398,27 +403,27 @@ rt_nonfinite.o : $(START_DIR)/flightControlSystem_ert_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rsedu_control.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_control.c
+rsedu_control.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_control.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rsedu_of.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_of.c
+rsedu_of.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_of.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-rsedu_vis.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/rsedu_vis.c
+rsedu_vis.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/rsedu_vis.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-ptimer.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/ptimer.c
+ptimer.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/ptimer.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-controlCommand.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/controlCommand.c
+controlCommand.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/controlCommand.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-mw_extrathreads.o : /home/laberobotica/Documents/MATLAB/SupportPackages/R2021a_1/toolbox/target/supportpackages/parrot/src/mw_extrathreads.c
+mw_extrathreads.o : C:/ProgramData/MATLAB/SupportPackages/R2021a/toolbox/target/supportpackages/parrot/src/mw_extrathreads.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
@@ -463,8 +468,8 @@ info :
 
 clean : 
 	$(ECHO) "### Deleting all derived files..."
-	$(RM) $(PRODUCT)
-	$(RM) $(ALL_OBJS)
+	$(RM) $(subst /,\,$(PRODUCT))
+	$(RM) $(subst /,\,$(ALL_OBJS))
 	$(RM) *.dep
 	$(ECHO) "### Deleted all derived files."
 
