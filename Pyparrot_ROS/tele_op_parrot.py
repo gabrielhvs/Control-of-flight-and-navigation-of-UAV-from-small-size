@@ -5,7 +5,7 @@ import curses
 import os
 
 def main(win):
-    rospy.init_node('p3dx_teleop', anonymous=True)
+    rospy.init_node('parrot_teleop', anonymous=True)
     velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
     vel_msg = Twist()
 

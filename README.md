@@ -43,7 +43,7 @@ Este repositório descreve o desenvolvimento do trabalho de conclusão de curso,
 ### Desenvolvimento do trabalho escrito
 
 
-[Overleaf, Online LaTeX Editor](https://www.overleaf.com/3876529313fpgcvprxmmwh)
+[https://drive.google.com/file/d/18oDpeT6kQzt5ujMfRdvcRAiIVvoRp8vE/view](https://drive.google.com/file/d/18oDpeT6kQzt5ujMfRdvcRAiIVvoRp8vE/view)
 
 
 ### Videos de resultados
@@ -52,7 +52,7 @@ Este repositório descreve o desenvolvimento do trabalho de conclusão de curso,
 - Controle do drone usando python e ROS
 
 
-[https://drive.google.com/file/d/1QMGGZoawOVHSsdkbIZ-oHkZuxOceV3jd/view?usp=sharing](https://drive.google.com/file/d/1QMGGZoawOVHSsdkbIZ-oHkZuxOceV3jd/view?usp=sharing)
+[FLY_DRONE.mp4](FLY_DRONE.mp4)
 
 
 ### Relatório de Conclusão:
